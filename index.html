@@ -1,9 +1,800 @@
-<head>
-  <link rel="icon" type="image/png" href="images/logo.png">
-</head>
+import svgPaths from "./svg-n1tegjlltn";
+import { useActiveBreakpoint } from "figma:react";
 
-<body>
-  <h1>Welcome to my website!</h1>
-  <h1>This is where I will share my projects and share my thoughts.</h1>
-  <h1>Thank you for visiting! - Pratik</h1>
-</body>
+function TextDesktop() {
+  return (
+    <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col gap-[32px] h-[218px] items-center leading-[0] left-[-150px] not-italic text-black text-center top-[41px] w-[1186px]" data-name="Text">
+      <div className="absolute flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center left-[576px] text-[64px] top-[48px] tracking-[-1.6px] translate-x-[-50%] translate-y-[-50%] w-[1152px]">
+        <h1 className="block leading-[1.1]">About Me: Pratik Kharel</h1>
+      </div>
+      <div className="absolute flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center left-[575.5px] text-[24px] top-[142.5px] tracking-[-0.12px] translate-x-[-50%] translate-y-[-50%] w-[729px]">
+        <p className="leading-[1.45]">Welcome to my web page! This site offers insight into my projects, my hobbies, and my interests. Hopefully after seeing the things that pique my curiosity, you will know me better!</p>
+      </div>
+    </div>
+  );
+}
+
+function HeroDesktop() {
+  return (
+    <section className="bg-[#20312b] h-[296px] relative shrink-0 w-full" data-name="Hero">
+      <div className="flex flex-col items-center size-full">
+        <div className="box-border content-stretch flex flex-col gap-[48px] h-[296px] items-center px-[64px] py-[120px] relative w-full">
+          <TextDesktop />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ImageDesktop() {
+  return (
+    <section className="h-[1012px] relative shrink-0 w-full" data-name="Image">
+      <div className="flex flex-col items-center justify-center size-full">
+        <div className="box-border content-stretch flex flex-col h-[1012px] items-center justify-center px-[64px] py-0 relative w-full">
+          <div className="h-[542px] relative rounded-[16px] shrink-0 w-full" data-name="Image">
+            <video aria-label="Landing detail" className="absolute max-w-none object-cover opacity-0 rounded-[16px] size-full" controlsList="nodownload">
+              <source src="/_videos/v1/62621e31bf59cd833c3dd5d846bae769ae8a3cef" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TextDesktop1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[24px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[32px] tracking-[-0.64px] w-full">
+        <h2 className="block leading-[1.2]">This is where something will be...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[18px] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">A small description of the thing that I’ll talk about...</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentDesktop() {
+  return (
+    <div className="basis-0 content-stretch flex flex-col gap-[48px] grow h-full items-start justify-center min-h-px min-w-px relative shrink-0" data-name="Content">
+      <TextDesktop1 />
+    </div>
+  );
+}
+
+function Row1Desktop() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 1">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="box-border content-stretch flex gap-[64px] items-center justify-center pb-[40px] pt-[80px] px-[64px] relative w-full">
+          <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
+            <ContentDesktop />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TextDesktop2() {
+  return (
+    <div className="content-stretch flex flex-col gap-[24px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[36px] tracking-[-0.72px] w-full">
+        <h2 className="block leading-[1.2]">More stuff about stuff here...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[18px] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">Describe the stuff again...?</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentDesktop1() {
+  return (
+    <div className="basis-0 content-stretch flex flex-col gap-[48px] grow h-full items-start justify-center min-h-px min-w-px relative shrink-0" data-name="Content">
+      <TextDesktop2 />
+    </div>
+  );
+}
+
+function Row2Desktop() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 2">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="box-border content-stretch flex gap-[64px] items-center justify-center pb-[80px] pt-[40px] px-[64px] relative w-full">
+          <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
+            <ContentDesktop1 />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FeatureDesktop() {
+  return (
+    <section className="box-border content-stretch flex flex-col h-[436px] items-center justify-center overflow-visible p-0 relative shrink-0 w-[1251px]" data-name="Feature">
+      <Row1Desktop />
+      <Row2Desktop />
+    </section>
+  );
+}
+
+function TextBlock1Desktop() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[16px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 1">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[24px] text-nowrap text-white tracking-[-0.48px] whitespace-pre">Some text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Blah blah blahhh...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock2Desktop() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[16px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 2">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[24px] text-nowrap text-white tracking-[-0.48px] whitespace-pre">Some more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Lots of cool and interesting things...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock3Desktop() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[16px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 3">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[24px] text-nowrap text-white tracking-[-0.48px] whitespace-pre">and even more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Woah...woaaaahhh...that is cool!</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlockDesktop() {
+  return (
+    <div className="content-stretch flex gap-[48px] items-start relative shrink-0 w-full" data-name="Text block">
+      <TextBlock1Desktop />
+      <TextBlock2Desktop />
+      <TextBlock3Desktop />
+    </div>
+  );
+}
+
+function TextRowDesktop() {
+  return (
+    <section className="bg-[rgba(255,255,255,0.1)] h-[274px] relative shrink-0 w-full" data-name="Text row">
+      <div className="overflow-clip rounded-[inherit] size-full">
+        <div className="box-border content-stretch flex flex-col gap-[48px] h-[274px] items-start px-[64px] py-[120px] relative w-full">
+          <TextBlockDesktop />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NavDesktop() {
+  return (
+    <nav className="box-border content-stretch flex font-['Inter:Medium',_sans-serif] font-medium gap-[32px] items-start leading-[0] not-italic overflow-visible p-0 relative shrink-0 text-[20px] text-nowrap text-white tracking-[-0.1px]" data-name="Nav">
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Features</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Learn more</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Support</p>
+      </div>
+    </nav>
+  );
+}
+
+function TextDesktop3() {
+  return (
+    <div className="content-stretch flex gap-[32px] items-center justify-center relative shrink-0" data-name="Text">
+      <NavDesktop />
+    </div>
+  );
+}
+
+function SocialLink1Desktop() {
+  return (
+    <nav className="block cursor-pointer overflow-clip size-full" data-name="Social link 1">
+      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <path d={svgPaths.p3c382d72} fill="var(--fill-0, white)" id="Vector" />
+      </svg>
+    </nav>
+  );
+}
+
+function SocialLink2Desktop() {
+  return (
+    <a className="block cursor-pointer overflow-clip relative shrink-0 size-[24px]" data-name="Social link 2" href="https://www.linkedin.com/in/pratik-kharel-eng/">
+      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <g id="Vector">
+          <path clipRule="evenodd" d={svgPaths.p1fcf5070} fill="white" fillOpacity="0.5" fillRule="evenodd" />
+          <path d={svgPaths.pe7ea00} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p1ab31680} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p28c6df0} fill="var(--fill-0, white)" fillOpacity="0.5" />
+        </g>
+      </svg>
+    </a>
+  );
+}
+
+function SocialLinksDesktop() {
+  return (
+    <nav className="box-border content-stretch flex gap-[24px] items-center overflow-visible p-0 relative shrink-0" data-name="Social links">
+      <a className="relative shrink-0 size-[24px]" href="https://www.instagram.com/probably_pratik/">
+        <SocialLink1Desktop />
+      </a>
+      <SocialLink2Desktop />
+    </nav>
+  );
+}
+
+function FooterDesktop() {
+  return (
+    <footer className="relative shrink-0 w-full" data-name="Footer">
+      <div className="flex flex-row items-center size-full">
+        <div className="box-border content-stretch flex items-center justify-between p-[64px] relative w-full">
+          <TextDesktop3 />
+          <SocialLinksDesktop />
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function ContainerDesktop() {
+  return (
+    <nav className="bg-[#20312b] box-border content-stretch flex flex-col items-start p-0 relative size-full" data-name="Container">
+      <HeroDesktop />
+      <ImageDesktop />
+      <FeatureDesktop />
+      <TextRowDesktop />
+      <FooterDesktop />
+    </nav>
+  );
+}
+
+function TextTablet() {
+  return (
+    <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col gap-[24px] h-[213px] items-start leading-[0] left-[32px] not-italic text-black text-center top-[68px] w-[736px]" data-name="Text">
+      <div className="absolute flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center left-[368px] text-[56px] top-[49px] tracking-[-1.4px] translate-x-[-50%] translate-y-[-50%] w-[736px]">
+        <h1 className="block leading-[1.1]">About Me: Pratik Kharel</h1>
+      </div>
+      <div className="absolute flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center left-[368px] text-[20px] top-[150.5px] tracking-[-0.1px] translate-x-[-50%] translate-y-[-50%] w-[736px]">
+        <p className="leading-[1.45]">Welcome to my web page! This site offers insight into my projects, my hobbies, and my interests. Hopefully after seeing the things that pique my curiosity, you will know me better!</p>
+      </div>
+    </div>
+  );
+}
+
+function HeroTablet() {
+  return (
+    <section className="bg-[#20312b] h-[389px] relative shrink-0 w-full" data-name="Hero">
+      <div className="flex flex-col items-center size-full">
+        <div className="box-border content-stretch flex flex-col gap-[32px] h-[389px] items-center px-[32px] py-[96px] relative w-full">
+          <TextTablet />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ImageTablet() {
+  return (
+    <section className="h-[881px] relative shrink-0 w-full" data-name="Image">
+      <div className="size-full">
+        <div className="box-border content-stretch flex flex-col gap-[8px] h-[881px] items-start px-[32px] py-0 relative w-full">
+          <div className="h-[403px] relative rounded-[16px] shrink-0 w-full" data-name="Image">
+            <video aria-label="Landing detail" className="absolute max-w-none object-cover opacity-0 rounded-[16px] size-full" controlsList="nodownload">
+              <source src="/_videos/v1/62621e31bf59cd833c3dd5d846bae769ae8a3cef" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TextTablet1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[28px] tracking-[-0.56px] w-full">
+        <h2 className="block leading-[1.2]">More stuff about stuff here...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[18px] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">Describe the stuff again...?</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentTablet() {
+  return (
+    <div className="basis-0 content-stretch flex flex-col gap-[48px] grow h-full items-start justify-center min-h-px min-w-px relative shrink-0" data-name="Content">
+      <TextTablet1 />
+    </div>
+  );
+}
+
+function Row2Tablet() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 2">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="box-border content-stretch flex gap-[32px] items-center justify-center pb-[64px] pt-[32px] px-[32px] relative w-full">
+          <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
+            <ContentTablet />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TextTablet2() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[32px] tracking-[-0.64px] w-full">
+        <h2 className="block leading-[1.2]">This is where something will be...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[18px] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">A small description of the thing that I’ll talk about...</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentTablet1() {
+  return (
+    <div className="basis-0 content-stretch flex flex-col gap-[48px] grow h-full items-start justify-center min-h-px min-w-px relative shrink-0" data-name="Content">
+      <TextTablet2 />
+    </div>
+  );
+}
+
+function Row1Tablet() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 1">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="box-border content-stretch flex gap-[32px] items-center justify-center pb-[32px] pt-[64px] px-[32px] relative w-full">
+          <div className="basis-0 flex flex-row grow items-center self-stretch shrink-0">
+            <ContentTablet1 />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FeatureTablet() {
+  return (
+    <section className="box-border content-stretch flex flex-col items-center justify-center overflow-visible p-0 relative shrink-0 w-full" data-name="Feature">
+      <Row2Tablet />
+      <Row1Tablet />
+    </section>
+  );
+}
+
+function TextBlock1Tablet() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[12px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 1">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[-0.4px] whitespace-pre">Some text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[18px] text-white tracking-[-0.09px] w-[min-content]">
+        <p className="leading-[1.45]">Blah blah blahhh...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock2Tablet() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[12px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 2">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[-0.4px] whitespace-pre">Some more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[18px] text-white tracking-[-0.09px] w-[min-content]">
+        <p className="leading-[1.45]">Lots of cool and interesting things...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock3Tablet() {
+  return (
+    <div className="basis-0 box-border content-stretch flex flex-col gap-[12px] grow items-start min-h-px min-w-[324px] pb-0 pt-[24px] px-0 relative shrink-0" data-name="Text block 3">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[-0.4px] whitespace-pre">and even more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[18px] text-white tracking-[-0.09px] w-[min-content]">
+        <p className="leading-[1.45]">Woah...woaaaahhh...that is cool!</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlockTablet() {
+  return (
+    <div className="content-start flex flex-wrap gap-[32px] items-start relative shrink-0 w-full" data-name="Text block">
+      <TextBlock1Tablet />
+      <TextBlock2Tablet />
+      <TextBlock3Tablet />
+    </div>
+  );
+}
+
+function TextRowTablet() {
+  return (
+    <section className="bg-[rgba(255,255,255,0.1)] relative shrink-0 w-full" data-name="Text row">
+      <div className="overflow-clip rounded-[inherit] size-full">
+        <div className="box-border content-stretch flex flex-col gap-[32px] items-start px-[32px] py-[96px] relative w-full">
+          <TextBlockTablet />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NavTablet() {
+  return (
+    <nav className="box-border content-stretch flex font-['Inter:Medium',_sans-serif] font-medium gap-[24px] items-start leading-[0] not-italic overflow-visible p-0 relative shrink-0 text-[18px] text-nowrap text-white tracking-[-0.09px]" data-name="Nav">
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Features</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Learn more</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0">
+        <p className="leading-[1.45] text-nowrap whitespace-pre">Support</p>
+      </div>
+    </nav>
+  );
+}
+
+function TextTablet3() {
+  return (
+    <div className="content-stretch flex gap-[24px] items-center justify-center relative shrink-0" data-name="Text">
+      <NavTablet />
+    </div>
+  );
+}
+
+function SocialLink1Tablet() {
+  return (
+    <nav className="block cursor-pointer overflow-clip size-full" data-name="Social link 1">
+      <div className="absolute left-1/2 size-[24px] top-1/2 translate-x-[-50%] translate-y-[-50%]" data-name="Vector" role="link" tabIndex="0">
+        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+          <path d={svgPaths.p3c382d72} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </nav>
+  );
+}
+
+function SocialLink2Tablet() {
+  return (
+    <a className="block cursor-pointer overflow-clip relative shrink-0 size-[24px]" data-name="Social link 2" href="https://www.linkedin.com/in/pratik-kharel-eng/">
+      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <g id="Vector">
+          <path clipRule="evenodd" d={svgPaths.p1fcf5070} fill="white" fillOpacity="0.5" fillRule="evenodd" />
+          <path d={svgPaths.pe7ea00} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p1ab31680} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p28c6df0} fill="var(--fill-0, white)" fillOpacity="0.5" />
+        </g>
+      </svg>
+    </a>
+  );
+}
+
+function SocialLinksTablet() {
+  return (
+    <nav className="box-border content-stretch flex gap-[16px] items-center overflow-visible p-0 relative shrink-0" data-name="Social links">
+      <a className="relative shrink-0 size-[24px]" href="https://www.instagram.com/probably_pratik/">
+        <SocialLink1Tablet />
+      </a>
+      <SocialLink2Tablet />
+    </nav>
+  );
+}
+
+function FooterTablet() {
+  return (
+    <footer className="relative shrink-0 w-full" data-name="Footer">
+      <div className="flex flex-row items-center size-full">
+        <div className="box-border content-stretch flex items-center justify-between px-[32px] py-[64px] relative w-full">
+          <TextTablet3 />
+          <SocialLinksTablet />
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function ContainerTablet() {
+  return (
+    <nav className="bg-[#20312b] box-border content-stretch flex flex-col items-start p-0 relative size-full" data-name="Container">
+      <HeroTablet />
+      <ImageTablet />
+      <FeatureTablet />
+      <TextRowTablet />
+      <FooterTablet />
+    </nav>
+  );
+}
+
+function TextMobile() {
+  return (
+    <div className="absolute bg-[rgba(255,255,255,0.8)] content-stretch flex flex-col gap-[16px] h-[332px] items-start leading-[0] left-[24px] not-italic text-black text-center top-[35px] w-[327px]" data-name="Text">
+      <div className="absolute flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center left-[163.5px] text-[44px] top-[80px] tracking-[-1.1px] translate-x-[-50%] translate-y-[-50%] w-[327px]">
+        <h1 className="block leading-[1.1]">About Me: Pratik Kharel</h1>
+      </div>
+      <div className="absolute flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center left-[163.5px] text-[18px] top-[222px] tracking-[-0.09px] translate-x-[-50%] translate-y-[-50%] w-[327px]">
+        <p className="leading-[1.45]">Welcome to my web page! This site offers insight into my projects, my hobbies, and my interests. Hopefully after seeing the things that pique my curiosity, you will know me better!</p>
+      </div>
+    </div>
+  );
+}
+
+function HeroMobile() {
+  return (
+    <section className="bg-[#20312b] h-[418px] relative shrink-0 w-full" data-name="Hero">
+      <div className="flex flex-col items-center size-full">
+        <div className="box-border content-stretch flex flex-col gap-[32px] h-[418px] items-center px-[24px] py-[80px] relative w-full">
+          <TextMobile />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ImageMobile() {
+  return (
+    <section className="h-[736px] relative shrink-0 w-full" data-name="Image">
+      <div className="size-full">
+        <div className="box-border content-stretch flex flex-col gap-[8px] h-[736px] items-start px-[24px] py-0 relative w-full">
+          <div aria-label="Landing detail" className="h-[224px] rounded-[16px] shrink-0 w-full" data-name="Image" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function TextMobile1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[20px] tracking-[-0.4px] w-full">
+        <h2 className="block leading-[1.2]">This is where something will be...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[16px] tracking-[-0.08px] w-full">
+        <p className="leading-[1.45]">A small description of the thing that I’ll talk about...</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentMobile() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-start justify-center relative shrink-0 w-full" data-name="Content">
+      <TextMobile1 />
+    </div>
+  );
+}
+
+function Row1Mobile() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 1">
+      <div className="flex flex-col items-center justify-center size-full">
+        <div className="box-border content-stretch flex flex-col gap-[32px] items-center justify-center pb-[32px] pt-[40px] px-[24px] relative w-full">
+          <ContentMobile />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TextMobile2() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start leading-[0] not-italic relative shrink-0 text-white w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Bold',_sans-serif] font-bold justify-center relative shrink-0 text-[24px] tracking-[-0.48px] w-full">
+        <h2 className="block leading-[1.2]">More stuff about stuff here...</h2>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center relative shrink-0 text-[16px] tracking-[-0.08px] w-full">
+        <p className="leading-[1.45]">Describe the stuff again...?</p>
+      </div>
+    </div>
+  );
+}
+
+function ContentMobile1() {
+  return (
+    <div className="content-stretch flex flex-col gap-[40px] items-start justify-center relative shrink-0 w-full" data-name="Content">
+      <TextMobile2 />
+    </div>
+  );
+}
+
+function Row2Mobile() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Row 2">
+      <div className="flex flex-col items-center justify-center size-full">
+        <div className="box-border content-stretch flex flex-col gap-[32px] items-center justify-center pb-[40px] pt-[32px] px-[24px] relative w-full">
+          <ContentMobile1 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FeatureMobile() {
+  return (
+    <section className="box-border content-stretch flex flex-col items-center justify-center overflow-visible p-0 relative shrink-0 w-full" data-name="Feature">
+      <Row1Mobile />
+      <Row2Mobile />
+    </section>
+  );
+}
+
+function TextBlock1Mobile() {
+  return (
+    <div className="box-border content-stretch flex flex-col gap-[12px] items-start pb-0 pt-[24px] px-0 relative shrink-0 w-full" data-name="Text block 1">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[18px] text-nowrap text-white tracking-[-0.36px] whitespace-pre">Some text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Blah blah blahhh...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock2Mobile() {
+  return (
+    <div className="box-border content-stretch flex flex-col gap-[16px] items-start pb-0 pt-[24px] px-0 relative shrink-0 w-full" data-name="Text block 2">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[18px] text-nowrap text-white tracking-[-0.36px] whitespace-pre">Some more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Lots of cool and interesting things...</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlock3Mobile() {
+  return (
+    <div className="box-border content-stretch flex flex-col gap-[16px] items-start pb-0 pt-[24px] px-0 relative shrink-0 w-full" data-name="Text block 3">
+      <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none" />
+      <p className="font-['Inter:Bold',_sans-serif] font-bold leading-none not-italic relative shrink-0 text-[18px] text-nowrap text-white tracking-[-0.36px] whitespace-pre">and even more text here...</p>
+      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] min-w-full not-italic relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-[min-content]">
+        <p className="leading-[1.45]">Woah...woaaaahhh...that is cool!</p>
+      </div>
+    </div>
+  );
+}
+
+function TextBlockMobile() {
+  return (
+    <div className="content-stretch flex flex-col gap-[48px] items-start relative shrink-0 w-full" data-name="Text block">
+      <TextBlock1Mobile />
+      <TextBlock2Mobile />
+      <TextBlock3Mobile />
+    </div>
+  );
+}
+
+function TextRowMobile() {
+  return (
+    <section className="bg-[rgba(255,255,255,0.1)] relative shrink-0 w-full" data-name="Text row">
+      <div className="overflow-clip rounded-[inherit] size-full">
+        <div className="box-border content-stretch flex flex-col gap-[48px] items-start px-[24px] py-[40px] relative w-full">
+          <TextBlockMobile />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NavMobile() {
+  return (
+    <nav className="box-border content-stretch flex flex-col font-['Inter:Medium',_sans-serif] font-medium gap-[16px] items-start leading-[0] not-italic overflow-visible p-0 relative shrink-0 text-[16px] text-white tracking-[-0.08px] w-full" data-name="Nav">
+      <div className="flex flex-col justify-center relative shrink-0 w-full">
+        <p className="leading-[1.45]">Features</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0 w-full">
+        <p className="leading-[1.45]">Learn more</p>
+      </div>
+      <div className="flex flex-col justify-center relative shrink-0 w-full">
+        <p className="leading-[1.45]">Support</p>
+      </div>
+    </nav>
+  );
+}
+
+function TextMobile3() {
+  return (
+    <div className="content-stretch flex flex-col gap-[24px] items-start justify-center relative shrink-0 w-full" data-name="Text">
+      <NavMobile />
+    </div>
+  );
+}
+
+function SocialLink1Mobile() {
+  return (
+    <nav className="block cursor-pointer overflow-clip size-full" data-name="Social link 1">
+      <div className="absolute left-1/2 size-[24px] top-1/2 translate-x-[-50%] translate-y-[-50%]" data-name="Vector" role="link" tabIndex="0">
+        <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+          <path d={svgPaths.p3c382d72} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </nav>
+  );
+}
+
+function SocialLink2Mobile() {
+  return (
+    <a className="block cursor-pointer overflow-clip relative shrink-0 size-[24px]" data-name="Social link 2" href="https://www.linkedin.com/in/pratik-kharel-eng/">
+      <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <g id="Vector">
+          <path clipRule="evenodd" d={svgPaths.p1fcf5070} fill="white" fillOpacity="0.5" fillRule="evenodd" />
+          <path d={svgPaths.p15e02800} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p1ab31680} fill="var(--fill-0, white)" fillOpacity="0.5" />
+          <path d={svgPaths.p31c7a580} fill="var(--fill-0, white)" fillOpacity="0.5" />
+        </g>
+      </svg>
+    </a>
+  );
+}
+
+function SocialLinksMobile() {
+  return (
+    <nav className="box-border content-stretch flex gap-[16px] items-center overflow-visible p-0 relative shrink-0" data-name="Social links">
+      <a className="relative shrink-0 size-[24px]" href="https://www.instagram.com/probably_pratik/">
+        <SocialLink1Mobile />
+      </a>
+      <SocialLink2Mobile />
+    </nav>
+  );
+}
+
+function FooterMobile() {
+  return (
+    <footer className="relative shrink-0 w-full" data-name="Footer">
+      <div className="size-full">
+        <div className="box-border content-stretch flex flex-col gap-[56px] items-start px-[24px] py-[64px] relative w-full">
+          <TextMobile3 />
+          <SocialLinksMobile />
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function ContainerMobile() {
+  return (
+    <nav className="bg-[#20312b] box-border content-stretch flex flex-col items-start p-0 relative size-full" data-name="Container">
+      <HeroMobile />
+      <ImageMobile />
+      <FeatureMobile />
+      <TextRowMobile />
+      <FooterMobile />
+    </nav>
+  );
+}
+
+function Container() {
+  const { width } = useActiveBreakpoint();
+  if (width < 800) {
+    return <ContainerMobile />;
+  }
+  if (width < 1280) {
+    return <ContainerTablet />;
+  }
+  return <ContainerDesktop />;
+}
+
+export default Container;
